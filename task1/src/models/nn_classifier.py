@@ -85,7 +85,7 @@ class FeedForwardMnistClassifier(MnistClassifierInterface):
             epochs:
                 Number of training epochs.
             batch_size:
-                Mini-batch size.
+                Batch size.
             lr:
                 Learning rate.
             hidden_1:

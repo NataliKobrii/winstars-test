@@ -94,7 +94,7 @@ def validate_hyperparams(epochs: int, batch_size: int, lr: float) -> None:
         epochs: int
             Number of training epochs.
         batch_size: int
-            Mini-batch size.
+            Batch size.
         lr: float
             Learning rate.
 
@@ -112,7 +112,7 @@ def validate_hyperparams(epochs: int, batch_size: int, lr: float) -> None:
         raise ValueError("batch_size must be a positive integer.")
 
     if not isinstance(lr, (int, float)) or not (0 < lr <= 1):
-        raise ValueError("lr must be a number in the range (0, 1].")
+        raise ValueError("learning rate (lr) must be a number in the range (0, 1].")
 
 
 def validate_n_estimators(n_estimators: int) -> None:
