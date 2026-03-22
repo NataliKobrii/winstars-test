@@ -2,7 +2,14 @@
 
 import sys
 
-from config import BATCH_SIZE, DEBUG, LEARNING_RATE, LOG_FILE, MODEL_SAVE_DIR, NUM_EPOCHS
+from config import (
+    BATCH_SIZE,
+    DEBUG,
+    LEARNING_RATE,
+    LOG_FILE,
+    MODEL_SAVE_DIR,
+    NUM_EPOCHS,
+)
 from src.classifier import MnistClassifier
 from src.data_loader import load_mnist
 from src.logger import setup_logging
